@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+  }
+
+article{
+  background-color: rgb(217, 217, 217);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Frame{
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 2%;
+}
+
+.Frame img{
+  display: block;
+
+}
+.CoverPic{
+  width: 100%;
+  opacity: 0.6;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgb(122, 122, 122);
+}
+
+.OverlayText{
+  position: absolute;
+  top: 20%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: #000000; 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 100%; 
+  text-align: center;
+}
+.glass{
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%;
+  box-shadow: 5px 5px 5px 5px rgb(122, 122, 122);
+}
+
+nav, aside{
+  background-color: beige;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* footer{
+  height: 10vh;
+} */
+
+footer{
+  background-color: yellowgreen;
+}
+
+header{
+    background-color: gray;
+    /* background: linear-gradient( to Right, rgb(37, 37, 37), gray); */
+    /* padding: 20px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+
+  header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+li{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+li p{
+
+    font-weight: bold;
+    transition: transform 1s, text-shadow 1s;
+
+}
+
+li p:hover{
+    transform: scale(1.2);
+    text-shadow: 2px 2px 2px rgb(122, 122, 122);
+  }
+
+a{
+  color: black;
+  text-decoration:none;
+}
+
+
+
+  @media (max-width: 768px){
+    header div h1{
+      font-size: 1.5rem;
+    }
+    
+  }
