@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+  }
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient( to bottom, rgb(4, 41, 100) , rgb(148, 186, 255)); */
+    background-color:rgb(208, 226, 255);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(208, 226, 255);
+    /* background: linear-gradient( to bottom, rgb(148, 186, 255), rgb(208, 226, 255)); */
+  }
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+li{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+li p{
+
+    font-weight: bold;
+    transition: transform 1s, text-shadow 1s;
+
+}
+
+li p:hover{
+    transform: scale(1.2);
+    text-shadow: 2px 2px 2px rgb(122, 122, 122);
+  }
+
+  a{
+    color: black;
+    text-decoration:none;
+  }
+
+  article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(208, 226, 255);
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(208, 226, 255);
+
+    /* background: linear-gradient( to bottom,rgb(208, 226, 255 ), rgb(148, 186, 255)); */
+    }
+
+    .glass{
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        padding: 2%;
+        margin: 2%;
+        box-shadow: 5px 5px 5px 5px rgb(122, 122, 122);
+      }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
