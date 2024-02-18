@@ -1,22 +1,23 @@
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+}
 
-article{
-  background-color: rgb(217, 217, 217);
+article {
+  /* background-color: rgb(217, 217, 217); */
+  background-color: rgb(248, 253, 248);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Frame{
+.Frame {
   position: relative;
   display: inline-block;
   justify-content: center;
@@ -25,33 +26,32 @@ article{
   padding: 2%;
 }
 
-.Frame img{
+.Frame img {
   display: block;
-
 }
-.CoverPic{
+.CoverPic {
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgb(122, 122, 122);
 }
 
-.OverlayText{
+.OverlayText {
   position: absolute;
-  top: 20%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(2px); 
+  backdrop-filter: blur(2px);
   border-radius: 10px;
   box-shadow: 3px 3px 5px 5px rgb(24, 24, 24);
   width: fit-content;
-  color: #000000; 
-  padding: .1vw 2vw; 
-  font-size: 5vw; 
+  color: #000000;
+  padding: 0.1vw 2vw;
+  font-size: 5vw;
   text-align: center;
 }
-.glass{
+.glass {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
   border-radius: 10px;
@@ -60,23 +60,28 @@ article{
   box-shadow: 5px 5px 5px 5px rgb(122, 122, 122);
 }
 
-aside{
-  /* background: linear-gradient( to bottom, rgb(217, 217, 217) ,rgb(37, 37, 37)); */
-  background-color:  rgb(217, 217, 217);
+aside {
+  /* background-color:  rgb(217, 217, 217); */
+  background-color: rgb(248, 253, 253);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2%;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-around;
-  background: linear-gradient( to bottom, gray, rgb(216, 216, 216));
+  /* background: linear-gradient( to bottom, gray, rgb(216, 216, 216)); */
+  background: linear-gradient(
+    to bottom,
+    rgb(234, 255, 252),
+    rgb(248, 253, 253)
+  );
 }
 
-.welcomeBox{
-  border: solid 2px black;
+.welcomeBox {
+  /* border: solid 2px black; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,72 +92,76 @@ nav{
   height: 10vh;
 } */
 
-footer{
-  background: linear-gradient( to bottom, rgb(217, 217, 217) ,gray);
+footer {
+  /* background: linear-gradient( to bottom, rgb(217, 217, 217) ,gray); */
+  background: linear-gradient(
+    to bottom,
+    rgb(248, 253, 248),
+    rgb(248, 253, 248)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
 }
-footer div{
+footer div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header{
-    /* background-color: gray; */
-    background: linear-gradient( to bottom, rgb(37, 37, 37), gray);
-    /* padding: 20px; */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-  }
-
-  header div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
+header {
+  /* background: linear-gradient( to bottom, rgb(37, 37, 37), gray); */
+  background: linear-gradient(
+    to bottom,
+    rgb(152, 222, 230),
+    rgb(234, 255, 252)
+  );
+  /* padding: 20px; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
 }
 
-li{
-    margin-right: 30px;
-    display: flex;
-    align-items: center;
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-li p{
-
-    font-weight: bold;
-    transition: transform 1s, text-shadow 1s;
-
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
 }
 
-li p:hover{
-    transform: scale(1.2);
-    text-shadow: 2px 2px 2px rgb(122, 122, 122);
-  }
+li {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
 
-a{
+li p {
+  font-weight: bold;
+  transition: transform 1s, text-shadow 1s;
+}
+
+li p:hover {
+  transform: scale(1.2);
+  text-shadow: 2px 2px 2px rgb(122, 122, 122);
+}
+
+a {
   color: black;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-
-
-  @media (max-width: 768px){
-    header div h1{
-      font-size: 1.5rem;
-    }
-    
+@media (max-width: 768px) {
+  header div h1 {
+    font-size: 1.5rem;
   }
+}
