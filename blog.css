@@ -113,7 +113,7 @@ footer {
   border-radius: 3vw;
   padding: 2%;
   align-items: center;
- 
+  width: 60%;
   transition: 2s;
 }
 .picture:hover{
@@ -130,4 +130,40 @@ footer {
   justify-content: center;
   width: 80%;
   padding: 2%;
+}
+
+
+@media (min-width: 900px) {
+  .pics{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: ; */
+    width: 98%;
+  }
+  article div img{
+    width: 98%;
+  }
+
+  .picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 3vw;
+    padding: 1%;
+    align-items: center;
+    transition: 1s;
+    width: 27vw;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
 }
